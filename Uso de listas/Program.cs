@@ -28,7 +28,7 @@ namespace Usodelistas
 
             Funcionarios find = funcionario.Find(x => x.Id == digitado);
 
-            if (find.Id != null)
+            if (find != null)
             {
                 Console.Write("Qual a porcentagem? ");
                 double porcentagem = double.Parse(Console.ReadLine());
